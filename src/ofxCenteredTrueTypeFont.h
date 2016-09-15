@@ -30,7 +30,7 @@ class ofxCenteredTrueTypeFont : public ofTrueTypeFont{
 		r.width += 2.0f * padding;
 		r.height += 2.0f * padding;
 		ofSetRectMode(OF_RECTMODE_CENTER);
-		ofRect( x, y, r.width, r.height);
+		ofDrawRectangle( x, y, r.width, r.height);
 		ofSetRectMode(OF_RECTMODE_CORNER);
 	}
 	void drawCenteredBoundingBox(string s, ofVec2f pos, float padding = 0){
